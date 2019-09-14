@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defuse the bomb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="game-over">
+        <p>GAME OVER</p>
+    </div>
+    <div class="game-start-overlay">
+        <div class="start-button-container">
+            <p>Click to begin</p>
+            <button class="btn btn-success">Start</button>
+        </div>
+    </div>
+    <div class="explosion">
+        <img src="assets/images/explosion.gif"></img>
+    </div>
+    <div class="row">
+        <div class="col-4 offset-1 questions puzzle">
+            <div class="row">
+                <div class="col-12">
+                    <i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Puzzle Clues</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>1</button>
+                </div>
+                <div class="col-2">
+                    <button>2</button>
+                </div>
+                <div class="col-2">
+                    <button>3</button>
+                </div>
+                <div class="col-2">
+                    <button>4</button>
+                </div>
+                <div class="col-2">
+                    <button>5</button>
+                </div>
+                <div class="col-2">
+                    <button>6</button>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>7</button>
+                </div>
+                <div class="col-2">
+                    <button>8</button>
+                </div>
+                <div class="col-2">
+                    <button>9</button>
+                </div>
+                <div class="col-2">
+                    <button>10</button>
+                </div>
+                <div class="col-2">
+                    <button>11</button>
+                </div>
+                <div class="col-2">
+                    <button>12</button>
+                </div>                
+            </div>            
+            <div class="row">
+                <div class="col-2 offset-5">
+                    <button>13</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 offset-2 questions scavenger">
+            <div class="row">
+                <div class="col-12">
+                    <i class="fa fa-map fa-5x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Scavenger Hunt Clues</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>1</button>
+                </div>
+                <div class="col-2">
+                    <button>2</button>
+                </div>
+                <div class="col-2">
+                    <button>3</button>
+                </div>
+                <div class="col-2">
+                    <button>4</button>
+                </div>
+                <div class="col-2">
+                    <button>5</button>
+                </div>
+                <div class="col-2">
+                    <button>6</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>7</button>
+                </div>
+                <div class="col-2">
+                    <button>8</button>
+                </div>
+                <div class="col-2">
+                    <button>9</button>
+                </div>
+                <div class="col-2">
+                    <button>10</button>
+                </div>
+                <div class="col-2">
+                    <button>11</button>
+                </div>
+                <div class="col-2">
+                    <button>12</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>13</button>
+                </div>
+                <div class="col-2">
+                    <button>14</button>
+                </div>
+                <div class="col-2">
+                    <button>15</button>
+                </div>
+                <div class="col-2">
+                    <button>16</button>
+                </div>
+                <div class="col-2">
+                    <button>17</button>
+                </div>
+                <div class="col-2">
+                    <button>18</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>19</button>
+                </div>
+                <div class="col-2">
+                    <button>20</button>
+                </div>
+                <div class="col-2">
+                    <button>21</button>
+                </div>
+                <div class="col-2">
+                    <button>22</button>
+                </div>
+                <div class="col-2">
+                    <button>23</button>
+                </div>
+                <div class="col-2">
+                    <button>24</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>25</button>
+                </div>
+                <div class="col-2">
+                    <button>26</button>
+                </div>
+                <div class="col-2">
+                    <button>27</button>
+                </div>
+                <div class="col-2">
+                    <button>28</button>
+                </div>
+                <div class="col-2">
+                    <button>29</button>
+                </div>
+                <div class="col-2">
+                    <button>30</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button>31</button>
+                </div>
+                <div class="col-2">
+                    <button>32</button>
+                </div>
+                <div class="col-2">
+                    <button>33</button>
+                </div>
+                <div class="col-2">
+                    <button>34</button>
+                </div>
+                <div class="col-2">
+                    <button>35</button>
+                </div>
+                <div class="col-2">
+                    <button>36</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 offset-2">
+                    <button>37</button>
+                </div>
+                <div class="col-2 offset-4">
+                    <button>38</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row fuse-bar">
+    </div>
+    <div class="barrel">
+        <img id="barrel" src="assets/images/barrel-front.png"></img>
+        <img id="barrel" style="z-index:-2" src="assets/images/barrel-back.png"></img>
+        <div class="tnt-count">
+            <p>40</p>
+        </div>
+
+    </div>
+    <div>
+        <img id="flame" src="assets/images/flame2.gif"></img>
+    </div>
+    <div class="answer-mark">
+        <img src="//:0"></img>
+    </div>
+    <div class="tnt">
+    </div>
+
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="question-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="question-modal-title">Question</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-question-text">here</p>
+                </div>
+                <div class="answer-box row">
+                    <div class="col-3 offset-1">
+                        <p>Answer:</p>
+                    </div>
+                    <div class="col-3 offset-1">
+                        <input autofocus type="number" name="answer" id="answer" label="answer" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="sfx" src="assets/sounds/explosion.wav"></audio>
+</body>
+
+</html>
